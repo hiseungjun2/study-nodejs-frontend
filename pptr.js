@@ -15,14 +15,22 @@ const cheerio = require("cheerio");
     })
 
     await page.goto('https://www.tistory.com/category/life');
-    const html = await page.content()
-    const $ = cheerio.load(html)
+    const html = await page.content();
+    const $ = cheerio.load(html);
 
-    const article = $('ul.list_tistory > li > a').each()
+    let hrefArray = [];
+    $('ul.list_tistory > li > a').each((index, element) => {
+        const href = $(element).attr('href');
+        const title = $(element).find('.inner_desc_tit').text();
+        hrefArray.push({
+            href,
+            title
+        });
+    })
 
-    console.log(article)
+    console.log(hrefArray);
 
     // await page.screenshot({ path : 'example.png'});
 
-    // await browser.close();
+    await browser.close();
 })();
