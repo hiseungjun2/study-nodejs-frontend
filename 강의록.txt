@@ -28,3 +28,15 @@
         
     Seleniuum, beautifulsoup, scrapy
     Puppeteer
+
+3. React
+    Babel, JSX 가 필수
+    Babel 은 자바스크립트의 신 문법을 구 문법으로 바꿔주면서 이전 브라우저에서 구동될 수 있도록 지원
+    Webpack.js
+        무수히 많이 생성된 파일을 빌드하여 프로젝트의 용량을 줄여줌
+
+    Babel, Webpack 미리 배워두기
+
+    react 는 pascalCase 써야됨
+        pascalCase : MainHeader
+        camelCase : mainHeader

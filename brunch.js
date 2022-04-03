@@ -43,8 +43,6 @@ const puppeteer = require('puppeteer');
   // 키보드 화살표 아래를 눌러서 화면을 아래로 내린다.
   // -> 무한 스크롤 게시글 데이터가 들어오지 않을까?
 
-
-
   // await page.screenshot({ path: 'brunch.png' });
   // await browser.close();
 })();
